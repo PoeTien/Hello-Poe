@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Personal Volley Map</title>
+    <title>Simple Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <style type="text/css">
       /* Always set the map height explicitly to define the size of the div
@@ -25,8 +25,8 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 25.0276577, lng: 121.5457861 },
-          zoom: 8,  
+          center: { lat: -34.397, lng: 150.644 },
+          zoom: 8,
         });
       }
     </script>
@@ -36,7 +36,7 @@
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_GHCmf7ClGp9EpGSpmXy6tO8A7UOE2rY&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_GHCmf7ClGp9EpGSpmXy6tO8A7UOE2rY&callback=initMap"
       async
     ></script>
   </body>

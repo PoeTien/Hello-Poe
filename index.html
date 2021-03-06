@@ -2,42 +2,16 @@
 <html>
   <head>
     <title>Simple Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <style type="text/css">
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-        width: 100%;
-      }
-
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script>
-      let map;
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: -34.397, lng: 150.644 },
-          zoom: 8,
-        });
-      }
-    </script>
   </head>
   <body>
-    <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_GHCmf7ClGp9EpGSpmXy6tO8A7UOE2rY&callback=initMap"
-      async
-    ></script>
+    <iframe
+    width="600"
+    height="450"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_GHCmf7ClGp9EpGSpmXy6tO8A7UOE2rY
+      &q=Space+Needle,Seattle+WA">
+  </iframe>
   </body>
 </html>
